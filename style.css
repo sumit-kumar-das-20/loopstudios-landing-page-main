@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+body {
+  /* font-family: "Josefin Sans", sans-serif; */
+  /* font-family: "Alata", sans-serif; */
+  overflow-x: hidden;
+}
+
+/* utility classes */
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.item_center {
+  display: flex;
+  align-items: center;
+}
+
+.justify_between {
+  justify-content: space-between;
+}
+
+p {
+  font-family: "Alata", sans-serif;
+  font-size: 15px;
+}
+
+/* header */
+
+nav {
+  padding-top: 2rem;
+  justify-content: space-between;
+}
+
+ul {
+  gap: 1.5rem;
+  list-style: none;
+}
+
+ul li a {
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--White);
+  text-decoration: none;
+}
+
+header {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 90vh;
+}
+
+header .hero_title {
+  margin-top: 8%;
+}
+
+header .hero_title h1 {
+  width: 70%;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 8rem;
+  color: var(--White);
+  border: 2px solid var(--White);
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+/* middle section */
+
+section.middle_section {
+  width: 100%;
+  padding: 10% 0;
+  position: relative;
+}
+
+section.middle_section div:first-child {
+  width: 60%;
+}
+
+section.middle_section div:last-child {
+  /* border: 1px solid #000; */
+  width: 60%;
+  padding: 6rem;
+  /* width: 800px;
+  height: 400px; */
+
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 45%;
+  top: 40%;
+}
+
+section.middle_section div:last-child h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 5rem;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+section.middle_section div:last-child p {
+  margin-top: 1rem;
+  color: var(--Dark-Gray);
+}
+
+section.middle_section img {
+  width: 100%;
+}
+
+/* card section */
+
+section.card {
+  margin-bottom: 4rem;
+}
+
+section.card .title {
+  justify-content: space-between;
+}
+
+section.card .title h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+section.card .title button {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+
+  background-color: #fff;
+  border: 2px solid #000;
+  padding: 10px 40px;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+
+section.card .card_container {
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+section.card .card_container .card {
+  position: relative;
+  width: 320px;
+  height: 500px;
+}
+
+section.card .card_container .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section.card .card_container .card p {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: var(--White);
+
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+/* footer */
+footer {
+  padding: 4rem 0;
+  background: var(--Black);
+}
+
+footer .copyright {
+  margin-top: 2rem;
+}
+
+footer .copyright p {
+  color: var(--Dark-Gray);
+}
